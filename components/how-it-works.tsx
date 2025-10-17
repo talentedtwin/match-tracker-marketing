@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 const steps = [
   {
@@ -62,10 +63,12 @@ export function HowItWorks() {
               </div>
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                 <Card className="overflow-hidden border-border shadow-xl">
-                  <img
+                  <Image
                     src={step.image || "/placeholder.svg"}
                     alt={step.title}
                     className="w-full h-auto"
+                    width={500}
+                    height={300}
                   />
                 </Card>
               </div>

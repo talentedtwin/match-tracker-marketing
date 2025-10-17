@@ -1,6 +1,6 @@
-import { Card } from "@/components/ui/card"
-import { Star } from "lucide-react"
-import Image from "next/image"
+import { Card } from "@/components/ui/card";
+import { Star } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -27,7 +27,7 @@ const testimonials = [
       "The player stats feature is brilliant. Kids love seeing their goals and assists tracked. It really motivates them and celebrates their achievements.",
     rating: 5,
   },
-]
+];
 
 export function Testimonials() {
   return (
@@ -38,7 +38,8 @@ export function Testimonials() {
             LOVED BY COACHES & <span className="text-primary">PARENTS</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Join hundreds of grassroots teams already using GoalTrack every weekend.
+            Join hundreds of grassroots teams already using GoalTrack every
+            weekend.
           </p>
         </div>
 
@@ -50,7 +51,9 @@ export function Testimonials() {
                   <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                 ))}
               </div>
-              <p className="text-foreground leading-relaxed mb-6">"{testimonial.content}"</p>
+              <p className="text-foreground leading-relaxed mb-6">
+                &ldquo;{testimonial.content}&rdquo;
+              </p>
               <div className="flex items-center gap-3">
                 <Image
                   src={testimonial.image || "/placeholder.svg"}
@@ -60,8 +63,12 @@ export function Testimonials() {
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <div className="font-semibold text-foreground">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                  <div className="font-semibold text-foreground">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {testimonial.role}
+                  </div>
                 </div>
               </div>
             </Card>
@@ -69,5 +76,5 @@ export function Testimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }
