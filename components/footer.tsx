@@ -5,10 +5,10 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold">GT</span>
-              </div>
-              <span className="font-bold text-lg">GoalTrack</span>
+              </div> */}
+              <span className="font-bold text-lg">Matchtracker</span>
             </div>
             <p className="text-secondary-foreground/70 text-sm leading-relaxed">
               Making grassroots football tracking simple for coaches and parents

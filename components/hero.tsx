@@ -36,7 +36,7 @@ export function Hero() {
               </Button> */}
             </div>
 
-            <div className="flex items-center gap-8 pt-4">
+            {/* <div className="flex items-center gap-8 pt-4">
               <div>
                 <div className="text-3xl font-bold text-foreground">10K+</div>
                 <div className="text-sm text-muted-foreground">
@@ -53,16 +53,16 @@ export function Hero() {
                 <div className="text-3xl font-bold text-foreground">4.9★</div>
                 <div className="text-sm text-muted-foreground">User Rating</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-muted shadow-2xl">
               <Image
-                src="/youth-football-match-action-shot-kids-playing-socc.jpg"
-                alt="Youth football match"
+                src="/football-team.png"
+                alt="Youth football team"
                 width={800}
-                height={600}
+                height={530}
                 className="w-full h-full object-cover"
                 priority
               />

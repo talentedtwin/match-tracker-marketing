@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export function MobileMenu() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -32,13 +32,13 @@ export function MobileMenu() {
           >
             How It Works
           </a>
-          <a
+          {/* <a
             href="#testimonials"
             className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors"
             onClick={() => setOpen(false)}
           >
             Testimonials
-          </a>
+          </a> */}
           <div className="flex flex-col gap-3 pt-4 border-t border-border">
             <Button variant="outline" className="w-full bg-transparent">
               Sign In
@@ -48,5 +48,5 @@ export function MobileMenu() {
         </nav>
       </SheetContent>
     </Sheet>
-  )
+  );
 }

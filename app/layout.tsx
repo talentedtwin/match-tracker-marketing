@@ -1,22 +1,21 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
-import { Suspense } from "react"
+import type React from "react";
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "GoalTrack - Grassroots Football Match Tracking",
+  title: "Matchtracker - Grassroots Football Match Tracking",
   description:
     "The easiest way for parents and coaches to track match results, record goalscorers, and celebrate assists in youth football.",
-  generator: "v0.app",
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -25,5 +24,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  )
+  );
 }
