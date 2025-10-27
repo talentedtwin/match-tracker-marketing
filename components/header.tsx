@@ -20,8 +20,8 @@ export function Header() {
               </Link>
             </div>
             <Link href="/">
-            <span className="font-bold text-xl md:text-2xl text-foreground">
-              Match Tracker
+            <span className="font-bebas-neue text-xl md:text-2xl text-foreground">
+              MatchTracker
             </span>
             </Link>
           </div>

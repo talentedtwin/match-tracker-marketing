@@ -29,7 +29,7 @@ export function HowItWorks() {
     <section id="how-it-works" className="py-20 md:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+          <h2 className="text-4xl md:text-5xl font-bebas-neue text-foreground mb-4 text-balance">
             HOW IT <span className="text-primary">WORKS</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -50,11 +50,11 @@ export function HowItWorks() {
                 className={`space-y-6 ${index % 2 === 1 ? "lg:order-2" : ""}`}
               >
                 <div className="inline-block">
-                  <span className="text-6xl md:text-7xl font-bold text-primary/20">
+                  <span className="text-6xl md:text-7xl font-bebas-neue text-primary/20">
                     {step.number}
                   </span>
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                <h3 className="text-3xl md:text-4xl font-bebas-neue text-foreground">
                   {step.title}
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">

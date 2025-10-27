@@ -11,7 +11,7 @@ export function CTA() {
           <div className="absolute inset-0 bg-[url('/football-action.png')] bg-center opacity-20" />
 
           <div className="relative text-center max-w-3xl mx-auto space-y-8">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground text-balance">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bebas-neue text-primary-foreground text-balance">
               READY TO SIMPLIFY MATCH DAY?
             </h2>
             <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed">

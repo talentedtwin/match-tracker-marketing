@@ -39,7 +39,7 @@ export function Features() {
     <section id="features" className="py-20 md:py-32 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+          <h2 className="text-4xl md:text-5xl font-bebas-neue text-foreground mb-4 text-balance">
             EVERYTHING YOU NEED FOR <span className="text-primary">MATCH DAY</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -54,7 +54,7 @@ export function Features() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <feature.icon className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-bebas-neue text-foreground mb-2">{feature.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
             </Card>
           ))}

@@ -25,7 +25,7 @@ export function Hero() {
               Track Every Goal, Celebrate Every Moment
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight text-balance">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bebas-neue text-foreground leading-tight text-balance">
               GRASSROOTS FOOTBALL{" "}
               <span className="text-primary">MADE SIMPLE</span>
             </h1>

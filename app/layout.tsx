@@ -1,12 +1,23 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { Bebas_Neue, Roboto_Condensed } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Suspense } from "react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas-neue",
+});
+
+const robotoCondensed = Roboto_Condensed({
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+  variable: "--font-roboto-condensed",
+});
 
 export const metadata: Metadata = {
   title: "Matchtracker - Grassroots Football Match Tracking",
@@ -21,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`${robotoCondensed.className} ${bebasNeue.variable} ${robotoCondensed.variable}`}>
         <Suspense fallback={null}>
           <Header />
           {children}

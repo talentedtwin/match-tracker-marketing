@@ -19,7 +19,7 @@ const PrivacyPolicy: React.FC = () => {
     <div className="max-w-5xl mx-auto p-8 bg-white">
       {/* Header */}
       <div className="border-b border-gray-300 pb-6 mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-2">
+        <h1 className="text-4xl font-bebas-neue text-gray-900 mb-2">
           PRIVACY POLICY
         </h1>
         <div className="text-sm text-gray-600 space-y-1">
@@ -38,7 +38,7 @@ const PrivacyPolicy: React.FC = () => {
       {/* Preamble */}
       <section className="mb-8">
         <div className="bg-white border border-gray-200 p-6 mb-6 rounded-lg">
-          <h2 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+          <h2 className="text-lg font-bebas-neue text-gray-900 mb-3 flex items-center">
             <Info className="w-5 h-5 mr-2 text-gray-600" />
             INTRODUCTION AND SCOPE
           </h2>
@@ -63,7 +63,7 @@ const PrivacyPolicy: React.FC = () => {
       <div className="space-y-10">
         {/* Section 1: Information We Collect */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <Database className="w-6 h-6 mr-3 text-gray-600" />
             1. INFORMATION WE COLLECT
           </h2>
@@ -155,7 +155,7 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Section 2: Legal Basis */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <FileText className="w-6 h-6 mr-3 text-gray-600" />
             2. LEGAL BASIS FOR PROCESSING
           </h2>
@@ -212,7 +212,7 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Section 3: How We Use Information */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <CheckCircle className="w-6 h-6 mr-3 text-gray-600" />
             3. PURPOSES OF PROCESSING
           </h2>
@@ -265,7 +265,7 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Section 4: Your Rights */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <Shield className="w-6 h-6 mr-3 text-gray-600" />
             4. YOUR DATA PROTECTION RIGHTS
           </h2>
@@ -371,7 +371,7 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Section 5: Data Security and Retention */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <Lock className="w-6 h-6 mr-3 text-gray-600" />
             5. DATA SECURITY AND RETENTION
           </h2>
@@ -480,7 +480,7 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Section 6: Third-Party Services */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <AlertCircle className="w-6 h-6 mr-3 text-gray-600" />
             6. THIRD-PARTY SERVICE PROVIDERS
           </h2>
@@ -564,7 +564,7 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Section 7: International Transfers */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <Database className="w-6 h-6 mr-3 text-gray-600" />
             7. INTERNATIONAL DATA TRANSFERS
           </h2>
@@ -596,7 +596,7 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Section 8: Contact and Complaints */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <FileText className="w-6 h-6 mr-3 text-gray-600" />
             8. CONTACT INFORMATION AND COMPLAINTS
           </h2>
@@ -650,7 +650,7 @@ const PrivacyPolicy: React.FC = () => {
 
         {/* Section 9: Policy Updates */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
+          <h2 className="text-2xl font-bebas-neue text-gray-900 mb-4 flex items-center border-b border-gray-200 pb-2">
             <Info className="w-6 h-6 mr-3 text-gray-600" />
             9. POLICY UPDATES AND CHANGES
           </h2>
@@ -692,7 +692,7 @@ const PrivacyPolicy: React.FC = () => {
       {/* Footer */}
       <div className="mt-12 pt-6 border-t-2 border-gray-300">
         <div className="bg-white rounded-lg p-6 text-center">
-          <h3 className="font-bold text-gray-900 mb-2">DOCUMENT INFORMATION</h3>
+          <h3 className="font-bebas-neue text-gray-900 mb-2">DOCUMENT INFORMATION</h3>
           <div className="text-sm text-gray-600 space-y-1">
             <p>
               <strong>Document Version:</strong> 1.0
