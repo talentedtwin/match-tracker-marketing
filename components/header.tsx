@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MobileMenu } from "@/components/mobile-menu";
 import Image from "next/image";
+import Link  from "next/link";
 
 export function Header() {
   return (
@@ -9,19 +10,23 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <Link href="/">
               <Image
                 src="/match-tracker.webp"
                 alt="Match Tracker"
                 width={40}
                 height={40}
               />
+              </Link>
             </div>
+            <Link href="/">
             <span className="font-bold text-xl md:text-2xl text-foreground">
               Match Tracker
             </span>
+            </Link>
           </div>
 
-          <nav className="hidden md:flex items-center gap-8">
+          {/* <nav className="hidden md:flex items-center gap-8">
             <a
               href="#features"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
@@ -39,7 +44,7 @@ export function Header() {
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Testimonials
-            </a> */}
+            </a> 
           </nav>
 
           <div className="flex items-center gap-4">
@@ -48,7 +53,7 @@ export function Header() {
             </Button>
             <Button className="hidden md:inline-flex">Get Started</Button>
             <MobileMenu />
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

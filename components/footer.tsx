@@ -16,35 +16,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div>
-            <h3 className="font-semibold mb-4">Product</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href="#"
-                  className="text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
-                >
-                  FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
+          
 
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
@@ -73,7 +45,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="/privacy"
                   className="text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
                 >
                   Privacy
@@ -81,7 +53,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/terms"
                   className="text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
                 >
                   Terms

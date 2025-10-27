@@ -1,11 +1,21 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
+  const handleScrollToCTA = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const ctaSection = document.getElementById('cta');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+      <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-background to-accent/5" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -26,7 +36,11 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-base h-12 px-8">
+              <Button 
+                size="lg" 
+                className="text-base h-12 px-8 hover:cursor-pointer"
+                onClick={handleScrollToCTA}
+              >
                 Start Tracking
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
