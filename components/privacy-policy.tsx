@@ -16,7 +16,7 @@ const PrivacyPolicy: React.FC = () => {
   const effectiveDate = "October 10, 2025";
 
   return (
-    <div className="max-w-5xl mx-auto p-8 bg-white">
+    <div className="max-w-5xl mx-auto p-8">
       {/* Header */}
       <div className="border-b border-gray-300 pb-6 mb-8">
         <h1 className="text-4xl font-bebas-neue text-gray-900 mb-2">
@@ -692,7 +692,9 @@ const PrivacyPolicy: React.FC = () => {
       {/* Footer */}
       <div className="mt-12 pt-6 border-t-2 border-gray-300">
         <div className="bg-white rounded-lg p-6 text-center">
-          <h3 className="font-bebas-neue text-gray-900 mb-2">DOCUMENT INFORMATION</h3>
+          <h3 className="font-bebas-neue text-gray-900 mb-2">
+            DOCUMENT INFORMATION
+          </h3>
           <div className="text-sm text-gray-600 space-y-1">
             <p>
               <strong>Document Version:</strong> 1.0

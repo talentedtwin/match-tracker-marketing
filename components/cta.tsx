@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { InterestForm } from "@/components/interest-form";
 
 export function CTA() {
   return (
@@ -18,15 +15,30 @@ export function CTA() {
               Join hundreds of coaches and parents who are already tracking
               their grassroots football matches with MatchTracker.
             </p>
+
+            {/* Commented out until app is published
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="#">
-                <Image src="/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play" width={155} height={40} />
+                <Image
+                  src="/GetItOnGooglePlay_Badge_Web_color_English.svg"
+                  alt="Get it on Google Play"
+                  width={155}
+                  height={40}
+                />
               </Link>
               <Link href="#">
-                <Image src="/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Get it on the App Store" width={120} height={40} />
+                <Image
+                  src="/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                  alt="Get it on the App Store"
+                  width={120}
+                  height={40}
+                  className="mt-2.5"
+                />
               </Link>
             </div>
-            
+            */}
+
+            <InterestForm />
           </div>
         </div>
       </div>

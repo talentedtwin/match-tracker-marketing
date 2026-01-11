@@ -6,6 +6,7 @@ import "./globals.css";
 import { Suspense } from "react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { BackToTop } from "@/components/back-to-top";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -23,6 +24,9 @@ export const metadata: Metadata = {
   title: "Matchtracker - Grassroots Football Match Tracking",
   description:
     "The easiest way for parents and coaches to track match results, record goalscorers, and celebrate assists in youth football.",
+  alternates: {
+    canonical: "https://www.matchtracker.co.uk",
+  },
 };
 
 export default function RootLayout({
@@ -32,14 +36,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${robotoCondensed.className} ${bebasNeue.variable} ${robotoCondensed.variable}`}>
+      <body
+        className={`${robotoCondensed.className} ${bebasNeue.variable} ${robotoCondensed.variable}`}
+      >
         <Suspense fallback={null}>
           <Header />
           {children}
           <Footer />
-          </Suspense>
+        </Suspense>
+        <BackToTop />
         <Analytics />
-
       </body>
     </html>
   );

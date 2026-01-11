@@ -16,9 +16,7 @@ export function Footer() {
             </p>
           </div>
 
-          
-
-          <div>
+          {/* <div>
             <h3 className="font-bebas-neue mb-4">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -31,14 +29,14 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#cta"
                   className="text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
                 >
                   Contact
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h3 className="font-bebas-neue mb-4">Legal</h3>
@@ -51,20 +49,23 @@ export function Footer() {
                   Privacy
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="/terms"
                   className="text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
                 >
                   Terms
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-secondary-foreground/10 text-center text-sm text-secondary-foreground/70">
-          <p>©<span className="font-bebas-neue">2025MatchTracker</span>. All rights reserved.</p>
+          <p>
+            ©<span className="font-bebas-neue">{new Date().getFullYear()}</span>{" "}
+            MatchTracker. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
