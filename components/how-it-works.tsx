@@ -6,21 +6,21 @@ const steps = [
     number: "01",
     title: "Create Your Team",
     description: "Add your team name and player roster in minutes.",
-    image: "/mobile-app-showing-team-roster-with-player-names.jpg",
+    image: "/match-tracker-app-create-team.png",
   },
   {
     number: "02",
     title: "Record Match Data",
     description:
       "During or after the match, quickly log goals, assists, and the final score. Simple tap interface.",
-    image: "/mobile-app-showing-match-score-entry-interface.jpg",
+    image: "/match-tracker-app-live-tracking.png",
   },
   {
     number: "03",
     title: "View Stats & Share",
     description:
       "Instantly see player stats, team performance, and share match reports with parents.",
-    image: "/mobile-app-showing-player-statistics-and-match-rep.jpg",
+    image: "/match-tracker-app-stats.png",
   },
 ];
 
@@ -62,13 +62,13 @@ export function HowItWorks() {
                 </p>
               </div>
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                <Card className="overflow-hidden border-border shadow-xl">
+                <Card className="overflow-hidden border-border shadow-xl p-0">
                   <Image
                     src={step.image || "/placeholder.svg"}
                     alt={step.title}
-                    className="w-full h-auto"
-                    width={500}
-                    height={300}
+                    className="w-full h-auto block"
+                    width={446}
+                    height={669}
                   />
                 </Card>
               </div>
