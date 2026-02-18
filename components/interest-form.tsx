@@ -8,7 +8,7 @@ import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL || "",
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ""
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "",
 );
 
 const formSchema = z
@@ -30,7 +30,7 @@ const formSchema = z
     {
       message: "Please specify your role",
       path: ["otherRole"],
-    }
+    },
   );
 
 type FormData = {
@@ -79,7 +79,7 @@ export function InterestForm() {
 
     // Check if Turnstile script is already loaded
     const existingScript = document.querySelector(
-      'script[src="https://challenges.cloudflare.com/turnstile/v0/api.js"]'
+      'script[src="https://challenges.cloudflare.com/turnstile/v0/api.js"]',
     );
 
     if (existingScript) {
@@ -114,7 +114,7 @@ export function InterestForm() {
 
     // Honeypot check - silently fail if filled
     if (formData.website) {
-      console.log("Bot detected - honeypot field filled");
+      //console.log("Bot detected - honeypot field filled");
       setIsSubmitting(true);
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setSubmitted(true);
