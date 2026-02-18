@@ -2,6 +2,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Bebas_Neue, Roboto_Condensed } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 import "./globals.css";
 import { Suspense } from "react";
 import { Header } from "@/components/header";
@@ -19,6 +20,8 @@ const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
   variable: "--font-roboto-condensed",
 });
+
+const GA_MEASUREMENT_ID = "G-GDEW9QXPGL";
 
 export const metadata: Metadata = {
   title: "Matchtracker - Grassroots Football Match Tracking",
@@ -39,6 +42,18 @@ export default function RootLayout({
       <body
         className={`${robotoCondensed.className} ${bebasNeue.variable} ${robotoCondensed.variable}`}
       >
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <Suspense fallback={null}>
           <Header />
           {children}
