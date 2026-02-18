@@ -22,6 +22,7 @@ const robotoCondensed = Roboto_Condensed({
 });
 
 const GA_MEASUREMENT_ID = "G-GDEW9QXPGL";
+const COOKIEBOT_DOMAIN_ID = "a120589d-903d-4ce8-9f4b-bd2d73643230";
 
 export const metadata: Metadata = {
   title: "Matchtracker - Grassroots Football Match Tracking",
@@ -43,10 +44,22 @@ export default function RootLayout({
         className={`${robotoCondensed.className} ${bebasNeue.variable} ${robotoCondensed.variable}`}
       >
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid={COOKIEBOT_DOMAIN_ID}
+          data-blockingmode="auto"
           strategy="afterInteractive"
         />
-        <Script id="ga-gtag" strategy="afterInteractive">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+          data-cookieconsent="statistics"
+        />
+        <Script
+          id="ga-gtag"
+          strategy="afterInteractive"
+          data-cookieconsent="statistics"
+        >
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
